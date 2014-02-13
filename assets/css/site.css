@@ -468,7 +468,6 @@ th {
 }
 td {
 	padding: 10px 0 5px 0;
-	width: 70%;
 	text-align: left !important;
 	border-bottom: 1px solid #eaeaea;
 }
@@ -476,8 +475,8 @@ td span
 {
 	display: block;
 	font-size: 12px;
-	margin-bottom: -10px;
 	color: #aaa;
+  margin: -5px 0;
 }
 td:last-child {
 	padding-left: 10%;
