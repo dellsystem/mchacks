@@ -371,13 +371,16 @@ hr
 	margin-top: 1rem;
 }
 .thalmic {
-	margin-top: 2rem;
+	margin-top: 0.75rem;
 }
 .smokes {
 	margin-top: -2rem;
 }
 .eightysix img {
 	min-width: 300px;
+}
+.honeybadger {
+	margin-top: 0.75rem;
 }
 .sponsors img {
 	-webkit-filter: grayscale(1.0) opacity(0.5);
