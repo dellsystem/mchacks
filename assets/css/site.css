@@ -284,24 +284,24 @@ hr
 .sponsors .evangelist > a {
 	width: 33.3333%;
 }
-.sponsors .seed > a {
+.sponsors .seed  a {
 	width: 20%;
 }
-.sponsors .giga > a img {
+.sponsors .giga  a img {
 	max-width: 80%;
 	max-width: 600px;
 }
-.sponsors .mega > a img {
+.sponsors .mega  a img {
 	max-width: 100%;
 	min-width: 200px;
 }
-.sponsors .evangelist > a img  {
+.sponsors .evangelist  a img  {
 	max-width: 100%;
 	min-width: 150px;
 	height:60px;	
 }
 
-.sponsors .seed > a img 
+.sponsors .seed  a img 
 {
 	max-width: 75%;
 	min-width: 75px;
