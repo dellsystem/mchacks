@@ -1,8 +1,9 @@
 @import url("reset.css");
+@import url("fonts.css");
 
 body
 {
-	font-family: "centrale_sansmedium", Arial;
+	font-family: "centrale_sansmedium", 'Helvetica Neue',Arial;
 	text-align:left;
 	background: #fff;
 }
@@ -39,12 +40,13 @@ header
 
 h1,h2,h3
 {
-	font-family: "centrale_sansbold";
+	font-family: "centrale_sansbold",'Helvetica Neue';
+	font-weight: 900;
 }
 
 h1
 {
-	font-size: 42px;
+	font-size: 3rem;
 	opacity: 0.8;
 }
 
@@ -69,6 +71,8 @@ h3
 {
 	margin-top: 3%;
 	margin-bottom: 5%;
+	padding-bottom: 5%;
+	border-bottom: 1px solid #ccc;
 }
 
 .highlight
@@ -102,8 +106,8 @@ hr
 
 #faq
 {
-	height: 25%;
-	position: relative;
+	/*height: 25%;*/
+	/*position: relative;*/
 	margin: 0 12.5%;
 }
 
@@ -191,6 +195,20 @@ hr
 	border: 1px solid #27AE60;
 	box-shadow: 0px -2px 0px rgba(26,105,60,0.2);
 }
+.button:first-child {
+	border-radius: 30px 0 0 30px;
+	background: #ef3e33;
+	border: 1px solid #cc362b;
+}
+.button:first-child:hover {
+	border-radius: 30px 0 0 30px;
+	background: #d6382d;
+	border: 1px solid #cc362b;
+}
+.button:last-child {
+	border-radius: 0 30px 30px 0;
+	border-left: 0;	
+}
 
 .button:hover
 {
@@ -234,6 +252,143 @@ hr
 	color: #fff;
 }
 
+.sponsors {
+	margin: 0 12.5%;
+	padding: 0 10px;
+}
+.sponsors h1{
+	border-bottom: 1px solid #ccc;
+	text-align: center
+}
+
+ .giga a,.mega a,.evangelist a,.seed a {
+	display:inline-block;
+	/*float:left;*/
+	padding: 30px 0;
+}
+.giga, .mega, .evangelist, .seed {
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 1rem;
+}
+ .giga a img,.mega a img,.evangelist a img,.seed a img {
+	display:block;
+	margin: auto;
+	overflow:auto;
+}
+.sponsors .giga > a {
+	width:100%;
+}
+.sponsors .mega > a {
+	width: 49.5%;
+}
+.sponsors .evangelist > a {
+	width: 32.9%;
+}
+.sponsors .seed  a {
+	width: 19%;
+}
+.sponsors .giga  a img {
+	max-width: 80%;
+	max-width: 600px;
+}
+.sponsors .mega  a img {
+	max-width: 95%;
+	min-width: 200px;
+}
+.sponsors .evangelist  a img  {
+	max-width: 90%;
+	min-width: 150px;
+	height:60px;	
+}
+
+.sponsors .seed  a img 
+{
+	max-width: 75%;
+	min-width: 75px;
+	margin:auto;
+}
+.center {
+	padding: 10px 25% !important;
+}
+.evangelist > .center {
+  padding: 10px 33.33333% !important;
+}
+.seed > .center {
+	padding: 10px 40% !important;
+}
+.ericsson { 
+	margin-top: -1em;
+}
+.shopify > img {
+	max-width: 75% !important;
+}
+.stickermule {
+	margin-top: 1.5em;
+}
+.msoft {
+	margin-top: 1em;
+}
+.mashery {
+	margin-top: -2em;
+	padding-bottom: 0 !important;
+}
+.sparkfun {
+  margin-top: -1.8em;
+}
+.namecheap {
+  margin-top: 0.8em;
+}
+.solium > img {
+  max-width: 70% !important;
+}
+.whisper {
+	margin-top: -2.5rem;
+}
+.whisper > img {
+  max-width: 80% !important;
+}
+.mashape {
+  padding-top:10px !important;
+}
+.palantir > img {
+  max-width: 80% !important;
+}
+.hypejar {
+	margin-top: -1em;
+}
+.hypejar > img {
+	max-width: 50% !important;
+}
+.microchip {
+	margin-top: 1em;
+}
+.vungle img{
+}
+.leap {
+	padding-top:25px;
+}
+.datastax {
+	margin-top: 1rem;
+}
+.thalmic {
+	margin-top: 0.75rem;
+}
+.smokes {
+	margin-top: -2rem;
+}
+.eightysix img {
+	min-width: 300px;
+}
+.honeybadger {
+	margin-top: 0.75rem;
+}
+.sponsors img {
+	-webkit-filter: grayscale(1.0) opacity(0.5);
+	/*padding: 0 5px;*/
+}
+.sponsors img:hover {
+	-webkit-filter: grayscale(0.0);
+}
 footer
 {
 	background: #111;
@@ -261,6 +416,16 @@ a:hover
 	text-decoration: underline;
 }
 
+a.sponsorship-link
+{
+	text-align: center; 
+	display: block;
+	margin: -30px 0 20px 0;
+	font-size: 18px;
+	color: #2ECC71;
+	font-weight: bold;
+}
+
 footer a
 {
 	border-bottom: 2px solid #2ECC71;
@@ -274,4 +439,87 @@ footer a:hover
 {
 	opacity: 1.0;
 	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	margin: auto;
+	font-size: 1.5rem;
+	font-weight: 800;
+	border: 1px solid #eaeaea;
+}
+tr {
+	margin: 0.5rem 0;
+}
+tr:hover {
+	/*background: #ccc !important;*/
+}
+tr:nth-child(odd){
+	/*background: #eee;*/
+}
+tr > td:first-child {
+	width: 25%;
+	color: #666;
+	padding-left: 25px;
+	text-align: center;
+
+}
+th {
+	/*width: 100%;*/
+	text-align: center;
+	background: none;
+}
+td {
+	padding: 10px 0 5px 0;
+	text-align: left !important;
+	border-bottom: 1px solid #eaeaea;
+}
+td span
+{
+	display: block;
+	font-size: 12px;
+	color: #aaa;
+  margin: -5px 0;
+}
+td:last-child {
+	padding-left: 10%;
+}
+
+.box {
+	/*min-height: 30%;
+	width: 80%;
+	margin: auto;*/
+	margin: 0 12.5%;
+}
+.box  h1 {
+	text-align: center;
+}
+
+@media(max-width: 800px) {
+	.giga a,.mega a,.evangelist a,.seed a {
+		width: 100% !important;
+		margin: 0 !imporant;
+		padding: 30px 0 !important;
+		float: none !important;
+	}
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 2rem;
+	}
+	.button {
+		border-radius: 0 !important;
+		border: 0 !important;
+		display:inline-block;
+		width:130%;
+		margin-left:-25%;
+	}
+	#faq {
+		margin: 0 5%;
+	}
+	.sponsors .giga > a img {
+		max-width: 100% ;
+
+	}
 }
