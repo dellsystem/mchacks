@@ -338,6 +338,9 @@ hr
 .namecheap {
   margin-top: 0.8em;
 }
+.solium {
+	margin-bottom: 3rem !important;
+}
 .solium > img {
   max-width: 70% !important;
 }
@@ -375,6 +378,9 @@ hr
 }
 .smokes {
 	margin-top: -2rem;
+}
+.eightsix {
+	padding: 0 !important;
 }
 .eightysix img {
 	min-width: 300px;
