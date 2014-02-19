@@ -294,10 +294,12 @@ hr
 .sponsors .mega  a img {
 	max-width: 95%;
 	min-width: 200px;
+	max-height: 200px;
 }
 .sponsors .evangelist  a img  {
 	max-width: 90%;
 	min-width: 150px;
+	max-height: 133px;
 	height:60px;	
 }
 
@@ -305,6 +307,7 @@ hr
 {
 	max-width: 75%;
 	min-width: 75px;
+	max-height: 80px;
 	margin:auto;
 }
 .center {
