@@ -303,6 +303,11 @@ hr
 	height:60px;	
 }
 
+#founderfuel {
+    width: 250px;
+    height: auto;
+}
+
 .sponsors .seed  a img 
 {
 	max-width: 75%;
