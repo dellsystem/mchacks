@@ -66,8 +66,7 @@ function loadEvents()
     var htmlstring = "";
     $.each(data,function(itemnum,item){
       htmlstring += "<li data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
-      htmlstring += "<h3>"+item["name"]+"</h3>";
-      htmlstring += "<p>"+item["description"]+"</p>";
+      htmlstring += "<p>"+item["name"]+"</p>";
       htmlstring += "<p>"+item["time"]+"</p>";
       htmlstring += "</li>";
     });
