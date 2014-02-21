@@ -1,17 +1,17 @@
 d3.xml('drawing.svg', 'image/svg+xml', function(xml) {
   var node = document.importNode(xml.documentElement, true);
   d3.select('#viz').node().appendChild(node);
-  d3.select('#g14577').style('fill', function(d) {
-    return d.color = '#CC362B';
-  });
+  //d3.select('#g14577').style('fill', function(d) {
+    //return d.color = '#CC362B';
+  //});
   removespinner();
   d3done();
-  loadEvents();
 });
 
 
 
 $(document).ready(function() {
+  loadEvents();
   var lastKey = '';
   var color;
   $(document.body).delegate("#eventslist>li","mouseenter",function(){
@@ -65,7 +65,14 @@ function loadEvents()
   $.getJSON("events.json",function(data){
     var htmlstring = "";
     $.each(data,function(itemnum,item){
-      htmlstring += "<li data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
+      var date = new Date(item["time"]);
+      var now = new Date();
+      if(date < now)
+      {
+        htmlstring += "<li class='past' data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
+      }else{
+        htmlstring += "<li data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
+      }
       htmlstring += "<p>"+item["name"]+"</p>";
       htmlstring += "<p>"+item["time"]+"</p>";
       htmlstring += "</li>";
