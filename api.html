@@ -1,0 +1,65 @@
+
+<html>
+<head>
+  <title>API Prizes</title>
+  <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" /> 
+
+  <link rel="stylesheet" href="./assets/css/site.css">
+  <script>
+    
+    window.onload = function() {
+      el = document.getElementById("logo")
+      bg = el.parentNode.parentNode 
+      el.style.marginTop = (bg.offsetHeight - el.offsetHeight) / 2
+    }
+    canCall = true;
+    window.onresize = function() {
+      if(!canCall) return;
+      calCall = false;
+      el = document.getElementById("logo")
+      bg = el.parentNode.parentNode
+      el.style.marginTop = (bg.offsetHeight - el.offsetHeight) / 2
+      setTimeout(function() {canCall = true},200);
+    }
+    
+  </script>
+</head>
+</html>
+<body>
+  <header>
+    <a href="http://mchacks.io">
+      <img id="logo" src="./assets/images/mchacks_dark_1200.png" style="margin-top: 135px;">
+    </a>
+  </header>
+  <section class="api">
+    <h1>APIs yo!</h1>
+    <table>
+      <tr>
+        <td>Company</td>
+        <td>Prize</td>
+        <td><a>Link</a></td>
+      </tr>
+      <tr>
+        <td>Company</td>
+        <td>Prize</td>
+        <td><a>Link</a></td>
+      </tr>
+      <tr>
+        <td>Company</td>
+        <td>Prize</td>
+        <td><a>Link</a></td>
+      </tr>
+      <tr>
+        <td>Company</td>
+        <td>Prize</td>
+        <td><a>Link</a></td>
+      </tr>
+      <tr>
+        <td>Company</td>
+        <td>Prize</td>
+        <td><a>Link</a></td>
+      </tr>
+    </table>
+  </section>
+</body>
+

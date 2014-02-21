@@ -471,21 +471,21 @@ tr:hover {
 tr:nth-child(odd){
 	/*background: #eee;*/
 }
-tr > td:first-child {
+
+.sched tr > td:first-child {
 	width: 25%;
 	color: #666;
 	padding-left: 25px;
 	text-align: center;
 
 }
-th {
-	/*width: 100%;*/
-	text-align: center;
-	background: none;
+td:first-child {
+	padding-left: 1rem;
+	text-align: ;
 }
 td {
 	padding: 10px 0 5px 0;
-	text-align: left !important;
+	text-align: left;
 	border-bottom: 1px solid #eaeaea;
 }
 td span
@@ -507,6 +507,11 @@ td:last-child {
 }
 .box  h1 {
 	text-align: center;
+}
+
+section { 
+	padding-top: 1rem;
+	margin: 0 12.5%;
 }
 
 @media(max-width: 800px) {
@@ -535,5 +540,8 @@ td:last-child {
 	.sponsors .giga > a img {
 		max-width: 100% ;
 
+	}
+	section {
+		margin: 0 5%;
 	}
 }
