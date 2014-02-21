@@ -74,7 +74,7 @@ function loadEvents()
         htmlstring += "<li data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
       }
       htmlstring += "<p>"+item["name"]+"</p>";
-      htmlstring += "<p>"+item["time"]+"</p>";
+      htmlstring += "<p>"+(new Date(item["time"]).toLocaleString()).replace(" ","<br>")+"</p>";
       htmlstring += "</li>";
     });
     $("#eventslist").html(htmlstring);
