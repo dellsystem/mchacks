@@ -1,0 +1,38 @@
+[
+  {
+    "name":"leacock example",
+    "building":"LEA",
+    "floor":"",
+    "time":"Sat Feb 15 2014"
+  },
+  {
+    "name":"gerts example",
+    "building":"SSMU",
+    "floor":"0",
+    "time":"Sat Feb 22 2014"
+  },
+  {
+    "name":"ssmu floor one example",
+    "building":"SSMU",
+    "floor":"1",
+    "time":"Sat Feb 22 2014"
+  },
+  {
+    "name":"ssmu floor two example",
+    "building":"SSMU",
+    "floor":"2",
+    "time":"Sat Feb 22 2014"
+  },
+  {
+    "name":"ssmu floor three example",
+    "building":"SSMU",
+    "floor":"3",
+    "time":"Sat Feb 22 2014"
+  },
+  {
+    "name":"ssmu floor four example",
+    "building":"SSMU",
+    "floor":"4",
+    "time":"Sat Feb 22 2014"
+  }
+]
