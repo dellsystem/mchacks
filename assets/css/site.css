@@ -1,9 +1,19 @@
 @import url("reset.css");
-@import url("fonts.css");
+/*@import url("fonts.css");*/
+
+@font-face {
+		font-family: Centrale Sans;
+		src: url('http://mchacks.io/assets/fonts/centrale_medium/typedepot_-_centralesans-medium-webfont.ttf');
+	} 
+@font-face {
+	font-family: Centrale Sans;
+	font-weight: 800;
+	src: url('http://mchacks.io/assets/fonts/centrale_bold/typedepot_-_centralesans-bold-webfont.ttf');
+}
 
 body
 {
-	font-family: "centrale_sansmedium", 'Helvetica Neue',Arial;
+	font-family: 'Centrale Sans', 'Helvetica Neue',Arial;
 	text-align:left;
 	background: #fff;
 }
@@ -40,8 +50,8 @@ header
 
 h1,h2,h3
 {
-	font-family: "centrale_sansbold",'Helvetica Neue';
-	font-weight: 900;
+	font-family: 'Centrale Sans','Helvetica Neue';
+	font-weight: 800;
 }
 
 h1
@@ -412,7 +422,7 @@ footer
 
 footer h3
 {
-	font-family: "centrale_sansmedium";
+	font-family: "Centrale Sans";
 	color: #555;
 	font-size: 14px;
 	margin: 0;
