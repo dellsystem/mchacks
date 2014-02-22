@@ -10,6 +10,13 @@
     padding: 20px;
     text-align: center;
   }
+  #eventstitle
+  {
+    position:fixed;
+    left: 0;
+    right: 0;
+    bottom: 175px;
+  }
   #events
   {
     position: fixed;
@@ -18,8 +25,8 @@
     right: 0;
     height: 200px;
     text-align: center;
-    overflow-x: scroll;
     font-size: 0.5 rem;
+    overflow-x: scroll;
   }
   #events ul
   {
@@ -65,7 +72,7 @@
   <div id="mapspin"><span class='fa fa-spin fa-spinner fa-4x'></span></div>
   <div id="viz"></div>
   <div id="events">
-    <h1>McHacks Upcoming Events</h1>
+    <div id="eventstitle"><h1>McHacks Upcoming Events</h1></div>
     <ul id="eventslist">
       <li><span class=' fa fa-spinner fa-spin fa-3x'></span></li>
     </ul>

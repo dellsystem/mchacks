@@ -1,13 +1,9 @@
 d3.xml('drawing.svg', 'image/svg+xml', function(xml) {
   var node = document.importNode(xml.documentElement, true);
   d3.select('#viz').node().appendChild(node);
-  //d3.select('#g14577').style('fill', function(d) {
-    //return d.color = '#CC362B';
-  //});
   removespinner();
   d3done();
 });
-
 
 
 $(document).ready(function() {
@@ -15,7 +11,6 @@ $(document).ready(function() {
   var lastKey = '';
   var color;
   $(document.body).delegate("#eventslist>li","mouseenter",function(){
-    console.log("HELLO MOFO");
     var floor = $(this).attr("data-floor");
     if(!floor)
     {
@@ -62,19 +57,20 @@ function removespinner()
 
 function loadEvents()
 {
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"];
   $.getJSON("events.json",function(data){
     var htmlstring = "";
     $.each(data,function(itemnum,item){
-      var date = new Date(item["time"]);
+      var date = new Date(item.time);
       var now = new Date();
       if(date < now)
       {
-        htmlstring += "<li class='past' data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
+        htmlstring += "<li class='past' data-building='" + item.building + "' data-floor='" + item.floor + "'>";
       }else{
-        htmlstring += "<li data-building='" + item["building"] + "' data-floor='" + item["floor"] + "'>";
+        htmlstring += "<li data-building='" + item.building + "' data-floor='" + item.floor + "'>";
       }
-      htmlstring += "<p>"+item["name"]+"</p>";
-      htmlstring += "<p>"+(new Date(item["time"]).toLocaleString()).replace(" ","<br>")+"</p>";
+      htmlstring += "<p>"+item.name+"</p>";
+      htmlstring += "<p>"+days[(new Date(item.time).getDay())]+"</p><p>"+(new Date(item.time)).toLocaleTimeString().slice(0,-3)+"</p>";
       htmlstring += "</li>";
     });
     $("#eventslist").html(htmlstring);
